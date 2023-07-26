@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+    <link rel="stylesheet" href="estilo_tela_cadastro.css">
+</head>
+
+<body>
+    <h1>Tela de cadastro</h1>
+    <section>
+        <div id="campos_de_cadastro">
+            <p>Dgite abaixo as informações necessárias:</p>
+            <p>Nome completo*: <input type="text" name="Nome" id="nome"></p>
+            <p id="msgerronome">O valor deve ter mais de 3 caracteres.</p>
+            <p>Idade*: <input type="number" name="Idade" id="idade"></p>
+            <p id="msgerroidade">Digite uma idade válida.</p>
+            <p>Salário: <input type="number" name="salario" id="salario"></p>
+
+            <div id="sexradiogrupo">
+                <p>Sexo: <input type="radio" name="radsex" id="masc" checked> <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="fem"> <label for="fem">Feminino</label>
+                </p>
+            </div>
+            <div id="ecradiogrupo">
+                <p>Estado civil: <input type="radio" name="estadicivil" id="S" checked> <label
+                        for="S">Solteiro(a)</label>
+                    <input type="radio" name="estadicivil" id="c"> <label for="c">Casado(a)</label>
+                    <input type="radio" name="estadicivil" id="v"> <label for="v">Viuvo(a)</label>
+                    <input type="radio" name="estadicivil" id="d"> <label for="d">Divorciado(a)</label>
+                </p>
+            </div>
+            <input type="button" value="Cadastrar" onclick="cadastrar()">
+
+        </div>
+        <div id="envio">
+            <p>Retorno de dados</p>
+        </div>
+    </section>
+
+    <script src="tela_de_cadastro.js"></script>
+
+</body>
+
+</html>
